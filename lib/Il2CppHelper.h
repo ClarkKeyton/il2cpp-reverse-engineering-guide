@@ -3,7 +3,7 @@
 #include <map>
 #include <iostream>
 #include <string>
-
+#include "pch-il2cpp.h"
 class Il2CppHelper {
 public:
 	Il2CppHelper();
@@ -24,6 +24,7 @@ public:
 	void GetFieldsInformation(Il2CppClass* klass);
 	void PrintMethods(Il2CppClass* klass);
 	void PrintAssemblyMap();
+	void SetFieldValue(const std::string& klass_nameassemblydll, const char* namespake, const char* classvalue, const char* name_space, const char* value_class, const char* fieldoffset, void* value);
 private:
 	 std::map<const char*, const Il2CppAssembly*> assemblyMap;
 };
